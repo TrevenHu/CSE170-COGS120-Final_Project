@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>Surprise Page</title>
+</head>
+<body>
+
+<h1>Surprise Page</h1>
+
+<div class="container">
+		<h2>Surprising Me</h2>
+		<div>I want sth...</div>
+		<div>Time</div>
+		<div>Cost</div>
+		<div>Distance</div>
+		<div>Feeling</div>
+
+		{{#each bottom-bar}}
+		<div class="button" id="{{id}}">
+			<a href="/{{name}}" class="thumbnail">
+				<p>{{name}}</p>
+			</a>
+		</div>
+		{{/each}}
+
+		
+		
+	</div>
+
+</body>
+</html>

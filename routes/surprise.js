@@ -4,7 +4,7 @@
  */
 
 exports.view = function(req, res){
-  res.render("index",{
+  res.render('surprise',{
   	"bottom-bar": [
       { 'name': 'Index',
         'id': 'index'

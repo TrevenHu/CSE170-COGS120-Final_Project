@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>Profile Page</title>
+</head>
+<body>
+
+<h1>Profile Page</h1>
+
+<div class="container">
+		<h2>My Profile</h2>
+		<div>Did: 38</div>
+		<div>To do: 42</div>
+
+		{{#each bottom-bar}}
+		<div class="button" id="{{id}}">
+			<a href="/{{name}}" class="thumbnail">
+				<p>{{name}}</p>
+			</a>
+		</div>
+		{{/each}}
+
+		
+		
+	</div>
+
+</body>
+</html>

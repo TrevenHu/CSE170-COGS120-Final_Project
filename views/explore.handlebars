@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>Explore Page</title>
+</head>
+<body>
+
+<h1>Explore Page</h1>
+
+<div class="container">
+		<h2>Friends' Updates</h2>
+		<div>search bar...</div>
+
+		{{#each bottom-bar}}
+		<div class="button" id="{{id}}">
+			<a href="/{{name}}" class="thumbnail">
+				<p>{{name}}</p>
+			</a>
+		</div>
+		{{/each}}
+
+		
+		
+	</div>
+
+</body>
+</html>
