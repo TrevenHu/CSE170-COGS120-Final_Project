@@ -50,7 +50,7 @@ body {margin:0;}
 .grid-container {
   display: grid;
   justify-content: space-evenly;
-  grid-template-columns: 250px 250px 250px;/*Make the grid smaller than the container*/
+  grid-template-columns: 33% 33% 33%;/*Make the grid smaller than the container*/
   grid-gap: 10px;
   background-color: #FFFFFF;
   padding: 10px;
