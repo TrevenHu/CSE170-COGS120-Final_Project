@@ -2,14 +2,14 @@
 
 <html>
 <head>
-	<title>Homepage</title>	
+	<title>User Profile</title>	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<!-- <link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet"> -->
 	<!-- this is a comment in HTML -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="../css/style.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -22,30 +22,12 @@
 	<div class="container-fluid">
 
 	
-		<header><h1>Recent Updates</h1></header>
+		<header><h1>User Profile</h1></header>
 
-		
-		
-		
-		<div class="container" data-spy="scroll">
-			{{#each updates}}
-
-		<div class="media">
-		  <img class="d-flex mr-3" src="{{imageURL}}" alt="Generic placeholder image" style="width:25%">
-		  <div class="media-body">
-		    <a href="/user/{{name}}"><h4 class="mt-0">{{name}}</h4></a>
-		    <a href="/idea/{{id}}"><h5 class="mt-0 checked "><i class="fas fa-flag-checkered"></i> {{checked}}</h5></a>
-		    <p>{{description}}</p>
-		    <a class="like"><i class="fas fa-heart"></i></a>
-		  </div>
-
-		</div>
-		<hr>
-		{{/each}}
-		
-		</div>
-		
-		
+		<!-- friends' updates -->
+		<!-- <div class="row">hi<i onclick="liked(this)" class="fas fa-heart"></i></div> -->
+		<a href="../"><i class="fas fa-chevron-circle-left"></i></a>
+		<h3>{{name}}'s profile</h3>
 		
 		<!-- bottom bar -->
 		<div class="icon-bar fixed-bottom">
@@ -62,14 +44,16 @@
 
 </div>
 
+	<script src="/js/index.js"></script>
+	<!-- <script src="https://code.jquery.com/jquery.js"></script> -->
 	
+	<!-- <script src="/js/bootstrap.min.js"></script> -->
 	
 	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-	<script src="/js/index.js"></script>
 </body>
 </html>
 
