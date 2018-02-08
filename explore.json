@@ -1,0 +1,62 @@
+{
+  "ideas": [
+    {
+      "id": "idea1",
+      "title" : "Take a bus or a train to a village or a town you have never visited to.",
+      "tried": "170"
+    },
+    {
+      "id": "idea2",
+      "title" : "Take a bus or a train to a village or a town you have never visited to.",
+      "tried": "170"
+    },
+    {
+      "id": "idea3",
+      "title" : "Take a bus or a train to a village or a town you have never visited to.",
+      "tried": "170"
+    },
+    {
+      "id": "idea4",
+      "title" : "Take a bus or a train to a village or a town you have never visited to.",
+      "tried": "170"
+    },
+    {
+      "id": "idea5",
+      "title" : "Take a bus or a train to a village or a town you have never visited to.",
+      "tried": "170"
+    },
+    {
+      "id": "idea6",
+      "title" : "Take a bus or a train to a village or a town you have never visited to.",
+      "tried": "170"
+    },
+    {
+      "id": "idea7",
+      "title" : "Take a bus or a train to a village or a town you have never visited to.",
+      "tried": "170"
+    },
+    {
+      "id": "idea8",
+      "title" : "Take a bus or a train to a village or a town you have never visited to.",
+      "tried": "170"
+    }
+  ],
+  "bottom-bar": [
+      { "name": "Index",
+        "id": "index",
+        "class": "fa fa-home"
+      },
+      { "name": "Explore",
+        "id": "explore",
+        "class": "fa fa-globe"
+      },
+      { "name": "Surprise",
+        "id": "surprise",
+        "class": "fa fa-lightbulb"
+      },
+      { "name": "Profile",
+        "id": "profile",
+        "class": "fa fa-user"
+      }
+    ]  
+}
