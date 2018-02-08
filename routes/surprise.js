@@ -7,16 +7,20 @@ exports.view = function(req, res){
   res.render('surprise',{
   	"bottom-bar": [
       { 'name': 'Index',
-        'id': 'index'
+        'id': 'index',
+        'class': 'fa fa-home'
       },
       { 'name': 'Explore',
-        'id': 'explore'
+        'id': 'explore',
+        'class': 'fa fa-globe'
       },
       { 'name': 'Surprise',
-        'id': 'surprise'
+        'id': 'surprise',
+        'class': 'fa fa-lightbulb-o'
       },
       { 'name': 'Profile',
-        'id': 'profile'
+        'id': 'profile',
+        'class': 'fa fa-user'
       }
     ]  
   });

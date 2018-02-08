@@ -62,17 +62,23 @@
   </div>
 </div>
 </div>
-  <div class="icon-bar">
+  
+  <!-- ziyue's bottom bar -->
+  <!-- <div class="icon-bar">
   <a class="active" href="#"><i class="fa fa-lightbulb-o"></i></a> 
   <a href="#"><i class="fa fa-globe"></i></a>
-    <a href="#"><i class="fa fa-address-book"></i></a>  
+    <a href="#"><i class="fa fa-user"></i></a>  --> 
 
+    <!-- bottom bar -->
+    <div class="icon-bar">
+    {{#each bottom-bar}}
+      <a href="/{{name}}" ><i class="{{class}}"></i>
+        <p>{{name}}</p>
+      </a>
+    {{/each}}
+    <footer></footer>
+    </div>
   
-
-
-
-<footer></footer>
-
 </div>
 
 </body>
