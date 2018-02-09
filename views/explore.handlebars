@@ -11,37 +11,31 @@
 <body>
 
 <div class="container-fluid">
-<div class="container">
-<header>
-  <h1>Explore</h1>
-</header>
+  <header><h1>Explore</h1></header>
 
-<form class="example" action="/explore">
-  <input type="text" placeholder="Search.." name="search">
-  <button type="submit"><i class="fa fa-search"></i></button>
-</form>
+  <form class="example" action="/explore">
+    <input type="text" placeholder="Search.." name="search">
+    <button type="submit"><i class="fa fa-search"></i></button>
+  </form>
 
 
 
-<div class="btn-group" style="width:100%">
-  <button style="width:50%">Trending</button>
-  <button style="width:50%">Newest</button>
-</div>
+  <div class="btn-group" style="width:100%">
+    <button style="width:50%">Trending</button>
+    <button style="width:50%">Newest</button>
+  </div>
 
-<div class="grid-container" data-spy="scroll">
-  {{#each ideas}}
-  <div>
-  <section  class="card">
-    <a href="/idea/{{id}}" class = "title">{{title}}</a>
-    <p class = "bottom-left"> <i class="fas fa-flag-checkered"></i>{{tried}}<i class="fas fa-heart"></i>{{liked}}</p>
-    <p class= "bottom-right">Provider:<a href="/user/{{name}}">{{name}}</a></p>
-  </a>
-  </section>
- </div>
+  <div class="grid-container" data-spy="scroll">
+    {{#each ideas}}
+    <div>
+      <section  class="card">
+        <a href="/idea/{{id}}" class = "title">{{title}}</a>
+        <p class = "bottom-left"> <i class="fas fa-flag-checkered"></i>{{tried}}<i class="fas fa-heart"></i>{{liked}}</p>
+        <p class= "bottom-right">Provider:<a href="/user/{{name}}">{{name}}</a></p>
+      </section>
+    </div>
   {{/each}}
-  
-</div>
-</div>
+  </div>
   
   <!-- ziyue's bottom bar -->
   <!-- <div class="icon-bar">
@@ -49,16 +43,18 @@
   <a href="#"><i class="fa fa-globe"></i></a>
     <a href="#"><i class="fa fa-user"></i></a>  --> 
 
-    <!-- bottom bar -->
+  <!-- bottom bar -->
     <div class="icon-bar fixed-bottom">
     {{#each bottom-bar}}
+    
       <a href="/{{name}}" ><i class="{{class}}"></i>
         <!-- <p>{{name}}</p> -->
       </a>
+    
     {{/each}}
+
     <footer></footer>
-    </div>  
-</div>
+    </div>
 </div>
 
 <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
