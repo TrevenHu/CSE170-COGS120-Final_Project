@@ -2,7 +2,7 @@
 /*
  * GET home page.
  */
-var data = require('../explore.json');
+var data = require('../update.json');
 exports.view = function(req, res){
   res.render('explore',data);
 };

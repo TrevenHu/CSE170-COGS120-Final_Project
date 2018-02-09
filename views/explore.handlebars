@@ -16,23 +16,26 @@
   <h1>Explore</h1>
 </header>
 
-<div class="topnav">
-  <div class="search-container">
-    <form action="/action_page.php">
-      <input type="text" placeholder="Search.." name="search">
-      <button type="submit"><i class="fa fa-search"></i></button>
-    </form>
-  </div>
+<form class="example" action="/explore">
+  <input type="text" placeholder="Search.." name="search">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+
+
+
+<div class="btn-group" style="width:100%">
+  <button style="width:50%">Trending</button>
+  <button style="width:50%">Newest</button>
 </div>
 
 <div class="grid-container" data-spy="scroll">
   {{#each ideas}}
   <div>
-  <section class="card">
-    <p class = "title">{{title}}</p>
-    <div class = "bottom">
-    <p class="mt-0 checked "><i class="fas fa-flag-checkered"></i> {{tried}}</p>
-  </div>
+  <section  class="card">
+    <a href="/idea/{{id}}" class = "title">{{title}}</a>
+    <p class = "bottom-left"> <i class="fas fa-flag-checkered"></i>{{tried}}<i class="fas fa-heart"></i>{{liked}}</p>
+    <p class= "bottom-right">Provider:<a href="/user/{{name}}">{{name}}</a></p>
+  </a>
   </section>
  </div>
   {{/each}}
@@ -63,6 +66,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="/js/explore.js"></script>
+  <script src="/js/idea.js"></script>
+  <script src="/js/user.js"></script>
 
 </body>
 </html>
