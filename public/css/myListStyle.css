@@ -103,7 +103,7 @@ section.card:hover {
 .grid-container {
   display: grid;
   justify-content:space-evenly;
-  /*grid-template-columns: 50% 50%; Make the grid smaller than the container*/
+  grid-template-columns: 50% 50%; /*Make the grid smaller than the container*/
   grid-gap: 1em;
   background-color: #FFFFFF;
   padding: 1em;
