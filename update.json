@@ -124,9 +124,13 @@
         "id": "surprise",
         "class": "fa fa-lightbulb"
       },
-      { "name": "Profile",
-        "id": "profile",
-        "class": "fa fa-user"
+      { "name": "MyList",
+        "id": "mylist",
+        "class": "fa fa-file-alt"
+      },
+      { "name": "Calendar",
+        "id": "calendar",
+        "class": "fa fa-calendar-alt"
       }
     ]  
 }

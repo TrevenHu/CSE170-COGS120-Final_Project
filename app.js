@@ -12,7 +12,8 @@ var handlebars = require('express3-handlebars')
 var index = require('./routes/index');
 var explore = require('./routes/explore');
 var surprise = require('./routes/surprise');
-var profile = require('./routes/profile');
+var mylist = require('./routes/mylist');
+var calendar = require('./routes/calendar');
 
 // User Profile Tabs
 var user = require('./routes/user');
@@ -54,7 +55,8 @@ app.get('/index', index.view);
 // Main Tabs
 app.get('/explore', explore.view);
 app.get('/surprise', surprise.view);
-app.get('/profile', profile.view);
+app.get('/calendar', calendar.view);
+app.get('/mylist', mylist.view);
 
 // User Profile Tabs
 app.get('/user/:name', user.view);
