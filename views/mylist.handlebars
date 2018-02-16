@@ -1,44 +1,82 @@
+
+
 <!DOCTYPE html>
 <html lang="en" >
 
 <head>
   <meta charset="UTF-8">
-  <title>Explore</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>My list</title>
+  <link rel="stylesheet" href="css/myListStyle.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
 
 <div class="container-fluid">
-  <header><h1>Explore</h1></header>
+  <div class="top_menu_bar"><h1>My List</h1>
+    <a href="add_new_ideas"><i class="fas fa-plus fa-lg top_right_button"></i></a>
+  </div>
 
-  <div class="btn-group" style="width:100%">
+  <!-- <div class="btn-group" style="width:100%">
     <button style="width:50%">Ideas to Try</button>
     <button style="width:50%">Tried it!</button>
+  </div> -->
+  <ul class="nav nav-pills nav-justified nav-tabs" role="tablist" id="nav">
+    <li class="nav-item">
+      <a class="nav-link active" id="toTryMenu" data-toggle="tab" href="#toTry" role="tab" aria-controls="toTry" aria-selected="true">To Try</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="TridMenu" data-toggle="tab" href="#tried" role="tab" aria-controls="tried" aria-selected="false">Tried</a>
+    </li>
+  </ul>
+
+<div>
+  <div class="tab-content grid-container container" data-spy="scroll">
+
+    <div class="tab-pane fade show active" id="toTry" role="tabpanel" aria-labelledby="toTryMenu">
+      
+      {{#each ideas}}
+        {{#ifvalue userTried desired="false"}}
+          <section>
+            <div class='myCard'>
+              <p class = 'hello'>{{title}}</p>
+              <!-- <div class='info'>
+                <p class="title"><i class="far fa-calendar-check"></i> Feb 13 2018</p>
+                <p class='description'>{{description}}</p>
+              </div> -->
+            </div>
+          </section>
+
+        {{/ifvalue}}
+      {{/each}}
+
   </div>
 
-  <div class="grid-container container" data-spy="scroll">
-    {{#each ideas}}
-    <div>
-  <div class='card'>
-    <p class = 'hello'>Hello World</p>
-    <div class='info'>
-      <p class="title"><i class="far fa-calendar-check"></i> Feb 13 2018</p>
-      <p class='description'>This is the detail of this idea. Went to the La Jolla beach at night and screamed my lungs out - I was able to go of my stress...</p>
-    </div>
-  </div>
+    
 
+    <div class="tab-pane fade" id="tried" role="tabpanel" aria-labelledby="TridMenu">
+
+      {{#each ideas}}
+        {{#ifvalue userTried desired="true"}}
+          <section>
+            <div class='myCard'>
+              <p class = 'hello'>{{title}}</p>
+              <!-- <div class='info'>
+                <p class="title"><i class="far fa-calendar-check"></i> Feb 13 2018</p>
+                <p class='description'>{{description}}</p>
+              </div> -->
+            </div>
+          </section>
+
+        {{/ifvalue}}
+      {{/each}}
     </div>
-  {{/each}}
   </div>
   
-  <!-- ziyue's bottom bar -->
-  <!-- <div class="icon-bar">
-  <a class="active" href="#"><i class="fa fa-lightbulb-o"></i></a> 
-  <a href="#"><i class="fa fa-globe"></i></a>
-    <a href="#"><i class="fa fa-user"></i></a>  --> 
-
+</div>
+    
+  
+  
   <!-- bottom bar -->
     <div class="icon-bar fixed-bottom">
     {{#each bottom-bar}}
