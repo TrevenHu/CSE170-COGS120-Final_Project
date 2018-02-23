@@ -1,3 +1,7 @@
+$("#thumbs-up").click(function(event){
+  
+});
+
 $('.avatar').click(function(e) {
   $('.card').toggleClass('active');
 });
