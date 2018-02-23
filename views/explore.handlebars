@@ -60,7 +60,7 @@
           <div>
             <section  class="card">
               <a href="idea/{{id}}" class = "title">{{title}}</a>
-
+              
               {{#ifvalue myList desired="true"}}              
               <a href="/add_to_my_list/{{id}}" class=" top_right_button_card" ><i class="fas fa-minus fa-lg"></i></a>
               <!-- <a class=" top_right_button_card" ><i class="fas fa-minus fa-lg"></i></a> -->
@@ -107,8 +107,9 @@
 
               {{/ifvalue}}
 
-              <p class = "bottom-left"> <i class="fas fa-check"></i>{{tried}} people tried this idea.
-                <!-- <i class="fas fa-heart"></i>{{liked}} -->
+              <p class = "bottom-left"> 
+                <i class="fas fa-heart"></i>{{liked}} people liked this idea.
+                <i class="fas fa-check"></i>{{tried}} people tried this idea.
               </p>
               <!-- <p class= "bottom-right">Provider:<a href="/user/{{name}}">{{name}}</a></p> -->
             </section>
