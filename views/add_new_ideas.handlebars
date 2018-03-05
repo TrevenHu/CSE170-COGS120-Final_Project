@@ -50,7 +50,7 @@
     <option value="3">Keep it private, add to my "tried" list</option>
   </select> -->
 
-
+<div class="form-style-5">
     <!-- as form version -->
     <form role="form" method="get" action="/add">
       <!-- <div class="form-group">
@@ -58,15 +58,21 @@
         <input type="text" class="form-control"  placeholder="Your Name ~" name="provider">
       </div> -->
       <div class="form-group">
+<<<<<<< HEAD
         <label for="title">Title</label>
         <input type="text" class="form-control capitalize"  placeholder="What is your idea?" name="title">
+=======
+
+        <label for="title"><span class="number">1</span>Title</label>
+        <input type="text" class="form-control"  placeholder="What is your idea?" name="title">
+>>>>>>> 6742d40fc404aa1d4683ab6aa426c984ef6eded2
       </div>
       <div class="form-group">
-        <label for="description">Description</label>
+        <label for="description"><span class="number">2</span>Description</label>
         <textarea class="form-control" rows="3" placeholder="Describe your idea briefly !" name="description"></textarea>
       </div>
       <div class="form-group">
-        <label for="category">Select a category...</label>
+        <label for="category"><span class="number">3</span>Select a category...</label>
         <select class="form-control" name="category" >
           <option value="adventurous">adventurous</option>
           <option value="stress-relieving">stress-relieving</option>
@@ -76,7 +82,7 @@
         </select>
       </div>
       <div class="form-group">
-        <label for="time">How long will it take?</label>
+        <label for="time"><span class="number">4</span>How long will it take?</label>
         <select class="form-control" name="time" >
           <option value="minutes">minutes</option>
           <option value="hours">hours</option>
@@ -86,7 +92,7 @@
         </select>
       </div>
       <div class="form-group">
-        <label for="cost">How much will it cost?</label>
+        <label for="cost"><span class="number">5</span>How much will it cost?</label>
         <select class="form-control" name="cost" >
           <option value="$0">$0</option>
           <option value="$">$</option>
@@ -95,12 +101,18 @@
           <option value="$$$$">$$$$</option>
         </select>
       </div>
+<<<<<<< HEAD
       <!-- <div class="form-group">
         <label for="add_to">Add to...</label>
+=======
+      <div class="form-group">
+        <label for="add_to"><span class="number">6</span>Add to...</label>
+>>>>>>> 6742d40fc404aa1d4683ab6aa426c984ef6eded2
         <select class="form-control" name="add_to" >
           <option value="1">Community</option>
           <option value="2">Private list</option>
         </select>
+<<<<<<< HEAD
       </div> -->
       <fieldset class="form-group">
         <div class="row">
@@ -123,10 +135,16 @@
       </fieldset>
       <!-- <div class="form-group">
         <label for="user_tried">Have you tried it before?</label>
+=======
+      </div>
+      <div class="form-group">
+        <label for="user_tried"><span class="number">7</span>Have you tried it before?</label>
+>>>>>>> 6742d40fc404aa1d4683ab6aa426c984ef6eded2
         <select class="form-control" name="user_tried" >
           <option value="1">Yep!</option>
           <option value="2">Nope...</option>
         </select>
+<<<<<<< HEAD
       </div> -->
       <fieldset class="form-group">
         <div class="row">
@@ -147,14 +165,125 @@
           </div>
         </div>
       </fieldset>
+=======
+      </div>
+      <div style="text-align: center;">
+>>>>>>> 6742d40fc404aa1d4683ab6aa426c984ef6eded2
       <button type="submit" class="btn btn-primary">Share</button>
+    </div>
     </form>
+</div>
 
 
 
 </div>
 
-  
+  <style type="text/css">
+    <style type="text/css">
+.form-style-5{
+    max-width: 500px;
+    padding: 10px 20px;
+    background: #428bca;
+    margin: 10px auto;
+    padding: 20px;
+    background: #428bca;
+    border-radius: 8px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+.form-style-5 fieldset{
+    border: none;
+}
+.form-style-5 legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+.form-style-5 label {
+    display: block;
+    margin-bottom: 8px;
+}
+.form-style-5 input[type="text"],
+.form-style-5 input[type="date"],
+.form-style-5 input[type="datetime"],
+.form-style-5 input[type="email"],
+.form-style-5 input[type="number"],
+.form-style-5 input[type="search"],
+.form-style-5 input[type="time"],
+.form-style-5 input[type="url"],
+.form-style-5 textarea,
+.form-style-5 select {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background: rgba(255,255,255,.1);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 0;
+    outline: 0;
+    padding: 7px;
+    width: 100%;
+    box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    background-color: #e8eeef;
+    color:#8a97a0;
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+    
+}
+.form-style-5 input[type="text"]:focus,
+.form-style-5 input[type="date"]:focus,
+.form-style-5 input[type="datetime"]:focus,
+.form-style-5 input[type="email"]:focus,
+.form-style-5 input[type="number"]:focus,
+.form-style-5 input[type="search"]:focus,
+.form-style-5 input[type="time"]:focus,
+.form-style-5 input[type="url"]:focus,
+.form-style-5 textarea:focus,
+.form-style-5 select:focus{
+    background: #d2d9dd;
+}
+.form-style-5 select{
+    -webkit-appearance: menulist-button;
+    height:35px;
+}
+.form-style-5 .number {
+    background: #428bca;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+    border-radius: 15px 15px 15px 0px;
+}
+
+.form-style-5 input[type="submit"],
+.form-style-5 input[type="button"]
+{
+    position: relative;
+    display: block;
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    margin: 0 auto;
+    background: #1abc9c;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    width: 100%;
+    border: 1px solid #16a085;
+    border-width: 1px 1px 3px;
+    margin-bottom: 10px;
+}
+.form-style-5 input[type="submit"]:hover,
+.form-style-5 input[type="button"]:hover
+{
+    background: #109177;
+}
+</style>
+  </style>
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

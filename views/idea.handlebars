@@ -10,11 +10,15 @@
 
 <body>
 	<div class="container-fluid" >
+<<<<<<< HEAD
    <div class="top_menu_bar" >
     <div>
     <a href="javascript:window.history.back()" ><i class="fas fa-chevron-circle-left fa-lg leftmost" style="color: white;"></i></a>
     <h1>Idea Detail</h1>
     </div>
+=======
+   <div class="top_menu_bar" ><h1>Idea Detail</h1></div>
+>>>>>>> 6742d40fc404aa1d4683ab6aa426c984ef6eded2
 		<!-- friends' updates -->
 		
         <div style="text-align: center;">
@@ -67,7 +71,6 @@
                   </div>
                 </div>
               </div>
-            </div>
           </div>
               <!-- add comment/reflection button part -->
 
@@ -78,7 +81,7 @@
         <div class="card-columns">
             <div class="row">
               <div class="col-sm-6">
-                <div class="card" style="background-color: #5cb85c">
+                <div class="card" style="background-color: #428bca">
                   <div class="card-body">
                   <img class="card-img-top img-fluid" style="width:4em; display: block;margin-left: auto;margin-right: auto;"  src="/img/{{idea.feeling}}.png" alt="Card image cap">
                   <h5 class="card-title capitalize" style="text-align: center;">{{idea.title}}</a></h5>
@@ -97,7 +100,7 @@
               
                     <!-- <p class= "bottom-right">Provider:<a href="/user/{{name}}">{{name}}</a></p> -->
                 </div>
-                  <div class="card-footer">
+                  <div class="card-footer" style="background-color: white;">
                         <small class="text-muted"><i class="fas fa-check"></i>  {{idea.tried}} people tried this idea.</small>
                   </div>
               </div>
@@ -113,11 +116,11 @@
       {{#each idea.notes}}
 
             {{#ifvalue property desired="public"}} 
-            <div class="card" style="height:15%;background: #d4e157; font-size: 1em;line-height: 0.8;">
+            <div class="card" style="height:15%;background-color: #428bca;line-height: 0.8;">
               <br />
-              <p style="text-align: left;">{{provider}}</p>
-              <p style="text-align: left; font-size: 0.7em;">{{date}}</p>
-              <p style="text-align: left;"><i class="far fa-comments"></i>   {{reflection}}</p>
+              <p style="text-align: left;font-size: 0.7em;">{{provider}} wrote:</p>
+              <p style="text-align: center; font-size: 1em;"> "{{reflection}}"</p>
+              <p style="text-align: left; font-size: 0.7em;">At {{date}}</p>
             </div>
             {{/ifvalue}}
 

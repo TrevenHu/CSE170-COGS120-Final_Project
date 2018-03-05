@@ -129,13 +129,13 @@
               <br />
               <br />
               <!-- I tried it again button -->
-              <button href="#" class="btn btn-primary tried" id="tried-{{id}}" data-toggle="modal" data-target="#reflectionModalAgain-{{id}}" style="width: 8em; background-color: #5cb85c;" >I tried it again!</button>
+              <button href="#" class="btn btn-primary tried" id="tried-{{id}}" data-toggle="modal" data-target="#reflectionModalAgain-{{id}}" style="width: 8em; background-color: #5cb85c; border-color: #5cb85c;" >I tried it again!</button>
               <button class="btn btn-primary" data-toggle="collapse" href="#collapseExample_{{id}}" aria-expanded="false" aria-controls="collapseExample_{{id}}" style="width: 8em; background-color: #428bca;">Reflection</button>
               
               <div class="collapse" id="collapseExample_{{id}}">
                 {{#each notes}}
-                  <h5>{{date}}</h5>
-                  <p>{{reflection}}</p>
+                  <p>{{date}}</p>
+                  <p style="text-align: center; font-weight: bold;">{{reflection}}</p>
                 {{/each}}
               </div>
               </p>
