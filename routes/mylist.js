@@ -43,7 +43,7 @@ exports.tried = function(req, res){
   var object = {
   	"reflection": req.query.reflection,
   	"date": temp.toString(),
-    "property": req.query.property==1? "public":"private",
+    "property": req.query.property,
     "provider": "McDonald"
   }
   console.log(object);
