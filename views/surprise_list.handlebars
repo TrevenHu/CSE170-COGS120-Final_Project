@@ -5,7 +5,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Surprise list</title>
+  <title>My list</title>
   <link rel="stylesheet" href="/css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -17,20 +17,13 @@
 
   <div class="top_menu_bar"><h1>Surprise List</h1>
     <!-- <a href="add_new_ideas"><i class="fas fa-plus fa-lg top_right_button"></i></a> -->
-    <div >
-    <a href="javascript:window.history.back()"><i class="fas fa-chevron-circle-left fa-lg leftmost" style="color: white;"></i></a>
-  </div>
+    <a href="javascript:window.history.back()"><i class="fas fa-chevron-circle-left" style="color: white;"></i></a>
     
-    <div>
     {{#each option}}
     <span class="badge {{class}}">{{name}}</span>
     {{/each}}
   </div>
 
-
-  </div>
-
-  
 
   <div class="card-columns">
      <br />
@@ -38,32 +31,27 @@
         {{#each all}}
 
             {{#ifvalue userTried desired="false"}}
-            {{#ifvalue myList desired="false"}} 
-
-        <div class="col-sm-6" id="block-newest-{{id}}">
-          <div class="card" >
+        <div class="col-sm-6">
+          <div class="card" id="block-{{id}}">
             <div class="card-body">
               <img class="card-img-top img-fluid" style="width:4em; display: block;margin-left: auto;margin-right: auto;"  src="/img/{{feeling}}.png" alt="Card image cap">
-              <h5 class="card-title capitalize" style="text-align: center;"><a href="idea/{{id}}">{{title}}</a></h5>
-              <p class="card-text" style="text-align: center;">{{description}}
-              <br />
-              <br />
-              <a href="/surprise_list/feeling/{{feeling}}"><span class="badge badge-primary">{{feeling}}</span></a>
-              <a href="/surprise_list/time/{{time}}"><span class="badge badge-success">{{time}}</span></a>
-              <a href="/surprise_list/cost/{{cost}}"><span class="badge badge-warning">{{cost}}</span></a>
-              </p>
+              <h5 class="card-title" style="text-align: center;"><a href="idea/{{id}}">{{title}}</a></h5>
+              <p class="card-text" style="text-align: center;">{{description}}</p>
 
-              <!-- {{#ifvalue myList desired="true"}}              
-              <a href="/add_to_my_list/surprise_list/{{id}}" class=" top_right_button_card" ><i class="fas fa-minus fa-lg"></i></a> -->
+
+              {{#ifvalue myList desired="true"}}              
+              <a href="/add_to_my_list/surprise_list/{{id}}" class=" top_right_button_card" ><i class="fas fa-minus fa-lg"></i></a>
               <!-- <a class=" top_right_button_card" ><i class="fas fa-minus fa-lg"></i></a> -->
 
-              <!-- {{/ifvalue}} -->
+              {{/ifvalue}}
 
-                           
-              <a href="/add_to_my_list/surprise_list/{{id}}" class="top_right_button_card" id="top_right_button_newest_{{id}}"><i class="fas fa-plus fa-lg"></i></a>
+              {{#ifvalue myList desired="false"}}              
+              <a href="/add_to_my_list/surprise_list/{{id}}" class=" top_right_button_card" ><i class="fas fa-plus fa-lg"></i></a>
               <!-- <a class=" top_right_button_card" ><i class="fas fa-plus fa-lg"></i></a> -->
 
-             
+              {{/ifvalue}}
+
+              
               
             </div>
              <div class="card-footer">
@@ -71,17 +59,12 @@
             </div>
           </div>
         </div>
-        {{/ifvalue}}
             {{/ifvalue}}
 
         {{/each}}
       </div>
     </div>
   
-  <!-- surprise me again -->
-  <div class="fixed-second-bottom">
-    <a href="/surprise"><i class="fas fa-sync-alt fa-lg"></i> Surprise Me Again ! </a>
-  </div>
   
   <!-- bottom bar -->
     <div class="icon-bar fixed-bottom">
