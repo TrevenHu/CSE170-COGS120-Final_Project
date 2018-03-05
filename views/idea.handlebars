@@ -97,7 +97,7 @@
               
                     <!-- <p class= "bottom-right">Provider:<a href="/user/{{name}}">{{name}}</a></p> -->
                 </div>
-                  <div class="card-footer">
+                  <div class="card-footer" style="background-color: white;">
                         <small class="text-muted"><i class="fas fa-check"></i>  {{idea.tried}} people tried this idea.</small>
                   </div>
               </div>
@@ -113,11 +113,13 @@
       {{#each idea.notes}}
 
             {{#ifvalue property desired="public"}} 
-            <div class="card" style="height:15%;background: #d4e157; font-size: 1em;line-height: 0.8;">
+            <div class="card" style="height:15%;background-color: #82bdf1; font-size: 1em;line-height: 0.8;">
               <br />
-              <p style="text-align: left;">{{provider}}</p>
-              <p style="text-align: left; font-size: 0.7em;">{{date}}</p>
-              <p style="text-align: left;"><i class="far fa-comments"></i>   {{reflection}}</p>
+              
+              <p style="text-align: left;font-size: 0.7em;">{{provider}} wrote:</p>
+              <p style="text-align: center; font-size: 1em;"> "{{reflection}}"</p>
+              <p style="text-align: left; font-size: 0.7em;">At {{date}}</p>
+
             </div>
             {{/ifvalue}}
 
