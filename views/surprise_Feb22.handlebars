@@ -56,51 +56,7 @@
 		<div class="wrapper">
   			<a href="/surprise_list" class="button">Surprise!</a>
 		</div>
-        <style type="text/css">
-        	.wrapper {
-  display: block;
-  position: absolute;
-  top: 130%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding-bottom: 7em;
-  padding-top: 7em;
-}
-.button {
-  padding: 0.75em 2em;
-  text-align: center;
-  text-decoration: none;
-  color: #ed4444;
-  border: 2px solid #ed4444;
-  font-size: 24px;
-  display: inline-block;
-  border-radius: 0.3em;
-  transition: all 0.2s ease-in-out;
-  position: relative;
-  overflow: hidden;
-}
-.button:before {
-  content: "";
-  background-color: rgba(255, 255, 255, 0.5);
-  height: 100%;
-  width: 3em;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: -4.5em;
-  transform: skewX(-45deg) translateX(0);
-  transition: none;
-}
-.button:hover {
-  background-color: #ed4444;
-  color: #fff;
-  border-bottom: 4px solid #1977b5;
-}
-.button:hover:before {
-  transform: skewX(-45deg) translateX(13.5em);
-  transition: all 0.5s ease-in-out;
-}
-        </style>
+
 		<!-- bottom bar -->
 		<div class="icon-bar fixed-bottom">
 		{{#each bottom-bar}}
