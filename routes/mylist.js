@@ -20,6 +20,21 @@ exports.view = function(req, res){
   data["toTry"] = toTry;
   data["tried"] = tried;
   // console.log(data);
+
+  // default: toTry active
+  if(!data["toTrySection"]) {
+    data["toTrySection"] = {
+      "section": "true",
+      "class": " show active "
+    }
+    data["triedSection"] = {
+      "section": "false",
+      "class": " "
+    } 
+  }else{
+    console.log("hi");
+  }
+  
   res.render('mylist',data);
 };
 
@@ -42,6 +57,20 @@ exports.tried = function(req, res){
   		break;
   	}
   }
+  var section = req.params.fromSection;
+  // console.log(section);
+  data["toTrySection"] = {
+    "section": (section == "toTry"? "true":"false"),
+    "class": (section == "toTry"? " show active ": " ")
+  }
+  console.log("toTrySection " + data["toTrySection"].section);
+  console.log("toTrySection " + data["toTrySection"].class);
+  data["triedSection"] = {
+    "section": (section == "tried"? "true":"false"),
+    "class": (section == "tried"? " show active ": " ")
+  } 
+  console.log("triedSection " + data["triedSection"].section);
+  console.log("triedSection " + data["triedSection"].class);
   var fromPage = req.params.fromPage;
   if(fromPage == "mylist"){
     console.log("equals to mylist");

@@ -25,17 +25,17 @@
   </div> -->
   <ul class="nav nav-pills nav-justified nav-tabs" role="tablist" id="nav">
     <li class="nav-item">
-      <a class="nav-link active" id="toTryMenu" data-toggle="tab" href="#toTry" role="tab" aria-controls="toTry" aria-selected="true">To Try<span class="num badge">{{toTry}}</span></a>
+      <a class="nav-link {{toTrySection.class}}" id="toTryMenu" data-toggle="tab" href="#toTry" role="tab" aria-controls="toTry" aria-selected="{{toTrySection.section}}">To Try<span class="num badge">{{toTry}}</span></a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" id="TridMenu" data-toggle="tab" href="#tried" role="tab" aria-controls="tried" aria-selected="false">Tried<span class="num badge">{{tried}}</span></a>
+      <a class="nav-link {{triedSection.class}}" id="TridMenu" data-toggle="tab" href="#tried" role="tab" aria-controls="tried" aria-selected="{{triedSection.section}}">Tried<span class="num badge">{{tried}}</span></a>
     </li>
   </ul>
 
 <div>
   <div class="tab-content container" data-spy="scroll">
 
-    <div class="tab-pane fade show active" id="toTry" role="tabpanel" aria-labelledby="toTryMenu">
+    <div class="tab-pane fade {{toTrySection.class}}" id="toTry" name="toTry" role="tabpanel" aria-labelledby="toTryMenu">
        <br />
       <div class="card-columns">
       <div class="row">
@@ -68,7 +68,7 @@
                     </div>
 
                     <div class="modal-body">
-                      <form role="form" method="get" action="/idea/tried/mylist/{{id}}">
+                      <form role="form" method="get" action="/idea/tried/mylist/toTry/{{id}}">
                         <!-- <div class="form-group">
                           <label for="recipient-name" class="col-form-label">Recipient:</label>
                           <input type="text" class="form-control" id="recipient-name">
@@ -109,7 +109,7 @@
 
     
 
-    <div class="tab-pane fade" id="tried" role="tabpanel" aria-labelledby="TridMenu">
+    <div class="tab-pane fade {{triedSection.class}}" id="tried" name="tried" role="tabpanel" aria-labelledby="triedMenu">
       <br />
       <div class="card-columns">
       <div class="row">
@@ -153,7 +153,7 @@
                     </div>
 
                     <div class="modal-body">
-                      <form role="form" method="get" action="/idea/tried/mylist/{{id}}">
+                      <form role="form" method="get" action="/idea/tried/mylist/tried/{{id}}">
                         <!-- <div class="form-group">
                           <label for="recipient-name" class="col-form-label">Recipient:</label>
                           <input type="text" class="form-control" id="recipient-name">
