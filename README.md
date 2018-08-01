@@ -1,3 +1,24 @@
+# Overview: Little Things - An Idea Sharing Mobile Web APP
+Website: https://a10-little-things.herokuapp.com/ (Open it with your mobile devices!)
+
+![Alt text](https://github.com/TrevenHu/CSE170-COGS120-Final_Project/blob/master/Poster.png?raw=true)
+
+Our application provides a platform where people can explore and share new ideas and
+activities based on how they feel (adventurous, productive, stressed), how much they want to
+spend, and how much time they have.
+This app allows people to be mindful of how they spend their days, to be intentional with the
+small actions they take, and to be inspired by what other people do to live with purpose.
+
+# Functionalities Brief Introduction
+
+1. "explore" page, you can click on the up-right "+" button, "newest", "trending", title of each card, up-right "+" button of each card, the blue/green/yellow badge of each card
+2. "explore2" page, you can click on the up-right "+" button, drag the card to left or right
+3. "surprise me" page, you can click "back" button, select from filter, and click "surprise me"
+4. "surprise list" page, you can click "back" button, "surprise me again" button on the bottom, up-right "+" button of each card, title of each card, the blue/green/yellow badge of each card
+5. "my list" page, you can click on the up-right "+" button, "to try", "tried", title of each card, the blue/green/yellow badge of each card, "I tried it" button, "reflection" button, 
+6. "calendar" page, you can click on each date, switch month, click into a day to view tried ideas on that day, click the title to view the idea on "my list" and reflections.
+7. "idea detail" page, you can click on the "back" button, the blue/green/yellow badge, the pen logo button to add refelctions, if you have never tried it before, there is a "I tried it" button for you to click.
+
 JSON Format Introduction
 ====
 
@@ -133,16 +154,3 @@ each idea:
 }
  
 ```
-
-
-
-# Functionalities Brief Introduction
-
-1. "explore" page, you can click on the up-right "+" button, "newest", "trending", title of each card, up-right "+" button of each card, the blue/green/yellow badge of each card
-2. "explore2" page, you can click on the up-right "+" button, drag the card to left or right
-3. "surprise me" page, you can click "back" button, select from filter, and click "surprise me"
-4. "surprise list" page, you can click "back" button, "surprise me again" button on the bottom, up-right "+" button of each card, title of each card, the blue/green/yellow badge of each card
-5. "my list" page, you can click on the up-right "+" button, "to try", "tried", title of each card, the blue/green/yellow badge of each card, "I tried it" button, "reflection" button, 
-6. "calendar" page, you can click on each date, switch month, click into a day to view tried ideas on that day, click the title to view the idea on "my list" and reflections.
-7. "idea detail" page, you can click on the "back" button, the blue/green/yellow badge, the pen logo button to add refelctions, if you have never tried it before, there is a "I tried it" button for you to click.
-
